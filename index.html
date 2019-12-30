@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student</title>
+</head>
+<body>
+    <div id="appComponent"></div>
+
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <!-- To enable JSX -->
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">  
+    // Our code will go here
+
+    function App() {
+    return (
+        <header>Sally Resume</header>
+        <main>
+            <ul>
+                <li>
+                    <p>TRADELOT, HR Generalist</p>
+                </li>
+                <li></li>
+            </ul>
+
+            
+                company name, job title, dates of employment and a short description
+        </main>
+        <section>
+            <h2>Education</h2>
+            <p>Stanford University</p>
+            <p>Bachelor of Arts in Communication</p>
+        </section>
+        <address>Name: Sally Owen
+            Email address: sallyOwen@thinkful
+            Phone number: 623-023-2304
+            <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally's headshot"/></address>
+        );
+    }
+
+    ReactDOM.render(
+    <App />,
+    document.querySelector('#appComponent')
+    );
+    </script>
+</body>
+</html>
